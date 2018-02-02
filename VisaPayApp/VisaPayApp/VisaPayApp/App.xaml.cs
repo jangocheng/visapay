@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using VisaPayApp.Services;
 using VisaPayApp.View;
 using Xamarin.Forms;
 
@@ -13,11 +14,21 @@ namespace VisaPayApp
 	        App.MasterDetail.IsPresented = false;
 	        await App.MasterDetail.Detail.Navigation.PushAsync(page);
 	    }
+
+        
+
         public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new Login();
+		    if (new ValidaLogin().Login() == true)
+		    {
+		        MainPage = new MasterDetail();
+            }
+		    else
+		    {
+		        MainPage = new Login();
+            }
 		}
 
 		protected override void OnStart ()

@@ -3,9 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VisaPayApp.View.Receber">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
+
             <StackLayout Padding="10" >
-                <Entry Keyboard="Numeric" FontSize="42"/>
+                <Entry Keyboard="Numeric" Style="{StaticResource input}"
+                       FontSize="60" Placeholder="R$ 0,00"
+                       x:Name="txtValor"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Button Style="{StaticResource buttonVerde}"
+                            Text="EFETUAR" HeightRequest="80" 
+                            Command="{Binding ButtonPagar}"/>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

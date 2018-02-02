@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SQLite.Net.Attributes;
 
 namespace VisaPayApp.Model
 {
     public class Cartao
     {
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Numero { get; set; }
         public int MesVencimento { get; set; }

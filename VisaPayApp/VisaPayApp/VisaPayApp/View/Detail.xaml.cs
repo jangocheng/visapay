@@ -17,5 +17,6 @@ namespace VisaPayApp.View
 			InitializeComponent ();
 		    BindingContext = new DetailViewModel();
 		}
+
 	}
 }

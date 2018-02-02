@@ -26,6 +26,12 @@ namespace VisaPayApp.ViewModel
                 case 1:
                     App.NavigateMaster(new Cartoes());
                 break;
+                case 2:
+                    App.NavigateMaster(new Dispositivos());
+                    break;
+                case 3:
+                    App.NavigateMaster(new Dispositivos());
+                    break;
             }
         }
 

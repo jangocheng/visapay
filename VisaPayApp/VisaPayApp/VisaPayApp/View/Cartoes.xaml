@@ -5,8 +5,9 @@
     <ContentPage.Content>
 
         <StackLayout BackgroundColor="White">
-            <StackLayout >
-                <Button Style="{StaticResource buttonAzul}" Text="Adicionar Novo" Image="add.png"/>
+            <StackLayout Padding="17">
+                <Button Style="{StaticResource buttonAzul}" 
+                        Text="Adicionar Novo" Image="add.png"/>
             </StackLayout>
             
             <StackLayout>

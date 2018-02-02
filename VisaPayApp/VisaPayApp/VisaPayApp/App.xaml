@@ -15,6 +15,12 @@
 		        <Setter Property="BackgroundColor" Value="{StaticResource azul}"></Setter>
 		        <Setter Property="TextColor" Value="#fff"></Setter>
 		    </Style>
+
+
+		    <Style x:Key="buttonVerde" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#00b233"></Setter>
+		        <Setter Property="TextColor" Value="#fff"></Setter>
+		    </Style>
         </ResourceDictionary>
 
 	</Application.Resources>

@@ -13,25 +13,30 @@
 
                 <StackLayout>
                     <Entry Placeholder="Nome" 
-                           Style="{StaticResource input}"/>
+                           Style="{StaticResource input}"
+                           Text="{Binding pessoa.Nome}"
+                           />
                 </StackLayout>
 
 
                 <StackLayout>
                     <Entry Placeholder="Email"
+                           Text="{Binding pessoa.Email}"
                            Style="{StaticResource input}"
                     />
                 </StackLayout>
 
                 <StackLayout>
                     <Entry Placeholder="Senha"
+                           Text="{Binding pessoa.Senha}"
                            Style="{StaticResource input}" IsPassword="True"/>
                 </StackLayout>
 
 
                 <StackLayout>
-                    <Entry Placeholder="Email" 
-                           Style="{StaticResource input}" Keyboard="Email"/>
+                    <Entry Placeholder="Telefone" 
+                           Text="{Binding pessoa.Telefone}"
+                           Style="{StaticResource input}" Keyboard="Numeric"/>
                 </StackLayout>
 
                 <StackLayout Margin="0,30,0,0">

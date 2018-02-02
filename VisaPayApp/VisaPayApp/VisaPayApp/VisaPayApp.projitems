@@ -16,13 +16,24 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Cartao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Dispositivo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Menus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Pessoa.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Conexao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IConection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IServices\IPessoaRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IServices\IRepositoryBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Repositories\PessoaRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Repositories\RepositoryBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ValidaLogin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CadastroViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CartoesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DispositivosViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MenuViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\RecebendoNfcViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ReceberViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Cadastro.xaml.cs">
       <DependentUpon>Cadastro.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -39,6 +50,14 @@
       <DependentUpon>Detail.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\DispositivoForm.xaml.cs">
+      <DependentUpon>DispositivoForm.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Dispositivos.xaml.cs">
+      <DependentUpon>Dispositivos.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -49,6 +68,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\RecebendoNfc.xaml.cs">
+      <DependentUpon>RecebendoNfc.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\Receber.xaml.cs">
       <DependentUpon>Receber.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -92,6 +115,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Receber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\RecebendoNfc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Dispositivos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\DispositivoForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

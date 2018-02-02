@@ -12,16 +12,22 @@ namespace VisaPayApp.ViewModel
     public class DetailViewModel: INotifyPropertyChanged
     {
         public Command ButtonCartao { get; set; }
-
+        public Command ButtonReceber { get; set; }
 
         public DetailViewModel()
         {
             ButtonCartao = new Command(ExecuteAddCartao, CanExecute);
+            ButtonReceber = new Command(ExecuteReceber, CanExecute);
         }
 
         public void ExecuteAddCartao()
         {
             App.NavigateMaster(new CartaoView());
+        }
+
+        public void ExecuteReceber()
+        {
+            App.NavigateMaster(new Receber());
         }
 
         public bool CanExecute()

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.Dispositivos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Padding="17">
+                <Button Style="{StaticResource buttonAzul}" 
+                        Text="Adicionar Novo" Image="add.png" Command="{Binding ButtonCadastrar}"/>
+            </StackLayout>
+
+            <StackLayout>
+                <ListView ItemsSource="{Binding Dispositivos}" HasUnevenRows="True" x:Name="ListView" SeparatorColor="#ccc">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="20">
+                                        <StackLayout 
+                                        BackgroundColor="{StaticResource azul}" 
+                                        Padding="10">
+                                           
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

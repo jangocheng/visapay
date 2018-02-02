@@ -41,7 +41,8 @@
                         HeightRequest="80"
                         BackgroundColor="#00b233"
                         Image="coin.png"
-                        Text="RECEBER NOVA TRANSAÇÃO"/>
+                        
+                        Text="RECEBER NOVA TRANSAÇÃO" Command="{Binding ButtonReceber}"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
