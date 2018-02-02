@@ -4,7 +4,18 @@
              x:Class="VisaPayApp.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+		<ResourceDictionary>
+            <Color x:Key="azul">#432ee7</Color>
+            <Style x:Key="input" TargetType="Entry">
+                <Setter Property="TextColor" Value="#000"></Setter>
+                <Setter Property="BackgroundColor" Value="#fcfcfc"></Setter>
+            </Style>
+
+		    <Style x:Key="buttonAzul" TargetType="Button">
+		        <Setter Property="BackgroundColor" Value="{StaticResource azul}"></Setter>
+		        <Setter Property="TextColor" Value="#fff"></Setter>
+		    </Style>
+        </ResourceDictionary>
 
 	</Application.Resources>
 </Application>

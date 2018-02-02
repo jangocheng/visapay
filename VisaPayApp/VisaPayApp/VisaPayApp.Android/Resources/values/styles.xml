@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
+  <style name="Splash" parent="android:Theme.Material.Light">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@drawable/splash</item>
+  </style>
+
   <style name="MainTheme" parent="MainTheme.Base">
   </style>
   <!-- Base theme applied no matter what API -->
@@ -11,12 +16,12 @@
     <item name="windowActionBar">false</item>
     <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
     <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#2196F3</item>
+    <item name="colorPrimary">#432ee7</item>
     <!-- colorPrimaryDark is used for the status bar -->
-    <item name="colorPrimaryDark">#1976D2</item>
+    <item name="colorPrimaryDark">#432ee7</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">#FF4081</item>
+    <item name="colorAccent">#00FFFFFF</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
     <item name="windowActionModeOverlay">true</item>
@@ -24,7 +29,7 @@
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
   </style>
 
-  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-    <item name="colorAccent">#FF4081</item>
+  <style name="AppCompatDialogStyle" parent="android:Theme.Material.Light">
+    <item name="colorAccent">#fff</item>
   </style>
 </resources>

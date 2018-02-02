@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using VisaPayApp.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace VisaPayApp.ViewModel
+namespace VisaPayApp.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Cadastro : ContentPage
+	public partial class Detail : ContentPage
 	{
-		public Cadastro ()
+		public Detail ()
 		{
 			InitializeComponent ();
+		    BindingContext = new DetailViewModel();
 		}
 	}
 }

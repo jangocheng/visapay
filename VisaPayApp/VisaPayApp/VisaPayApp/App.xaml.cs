@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using VisaPayApp.ViewModel;
+﻿using System.Threading.Tasks;
+using VisaPayApp.View;
 using Xamarin.Forms;
 
 namespace VisaPayApp
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
-		public App ()
+	    public static MasterDetailPage MasterDetail { get; set; }
+
+	    public async static Task NavigateMaster(Page page)
+	    {
+	        App.MasterDetail.IsPresented = false;
+	        await App.MasterDetail.Detail.Navigation.PushAsync(page);
+	    }
+        public App ()
 		{
 			InitializeComponent();
 

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.Detail"
+             Icon="logo_azul.png"
+             >
+
+    <ContentPage.Content>
+    <StackLayout Padding="20" BackgroundColor="White">
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                
+                <Button BackgroundColor="#fcfcfc" 
+                        HeightRequest="180"
+                        VerticalOptions="CenterAndExpand"
+                        BorderRadius="80"
+                        TextColor="#e4e4e4"
+                        Text="NENHUM CARTÃO ADICIONADO"
+                        />
+
+                <Button TextColor="#e4e4e4"
+                        BackgroundColor="#fcfcfc" 
+                        Text="ADICIONE UM NOVO CARTÃO" Image="add.png"
+                        Command="{Binding ButtonCartao}"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Saldo Off Line"
+                       FontAttributes="Bold" 
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="22"/>
+                <Label Text="R$ 0,00" 
+                       FontSize="22"
+                       TextColor="#ff7373"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button TextColor="White" 
+                        HeightRequest="80"
+                        BackgroundColor="#00b233"
+                        Image="coin.png"
+                        Text="RECEBER NOVA TRANSAÇÃO"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

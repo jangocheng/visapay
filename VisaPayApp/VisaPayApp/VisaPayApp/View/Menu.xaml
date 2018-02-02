@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.Menu" Title="Menu"  Menu="menu.png">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Padding="30" BackgroundColor="#432ee7">
+                <Image Source="logo_branco.png" VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" 
+                       HeightRequest="100"/>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout>
+                    <ListView ItemsSource="{Binding ListMenu}" HasUnevenRows="True" x:Name="ListView" SeparatorColor="#ccc">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout BackgroundColor="White" Padding="10">
+                                            <Label Text="{Binding Nome}"/>
+                                        </StackLayout>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                   </ListView>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.Cartoes" Icon="logo_branco.png">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="White">
+            <StackLayout >
+                <Button Style="{StaticResource buttonAzul}" Text="Adicionar Novo" Image="add.png"/>
+            </StackLayout>
+            
+            <StackLayout>
+                <ListView ItemsSource="{Binding ListCartao}" HasUnevenRows="True" x:Name="ListView" SeparatorColor="#ccc">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Padding="20">
+                                        <StackLayout 
+                                        BackgroundColor="{StaticResource azul}" 
+                                        Padding="10">
+                                            <Grid>
+                                                <StackLayout
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Grid.Row="0">
+                                                    <Label Text="Numero" TextColor="#fafafa" FontSize="10"/>
+                                                    <Label TextColor="White"
+                                                       Text="{Binding Numero}"/>
+                                                </StackLayout>
+
+                                                <StackLayout
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Grid.Row="1">
+                                                    <Label Text="Nome" TextColor="#fafafa" FontSize="10"/>
+                                                    <Label TextColor="White"
+                                                       Text="{Binding Nome}"/>
+                                                </StackLayout>
+
+                                                <StackLayout
+                                                Grid.Column="0"
+                                                Grid.Row="2">
+
+                                                    <Label Text="Mês" TextColor="#fafafa" FontSize="10"/>
+                                                    <Label TextColor="White"
+                                                       Text="{Binding MesVencimento}"/>
+
+                                                </StackLayout>
+
+                                                <StackLayout 
+                                                Grid.Column="1"
+                                                Grid.Row="2">
+                                                    <Label Text="Ano" TextColor="#fafafa" FontSize="10"/>
+                                                    <Label TextColor="White"
+                                                       Text="{Binding AnoVencimento}"/>
+                                                </StackLayout>
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

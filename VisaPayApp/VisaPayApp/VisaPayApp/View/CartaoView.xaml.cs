@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace VisaPayApp.ViewModel
+namespace VisaPayApp.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Menu : ContentPage
+	public partial class CartaoView : ContentPage
 	{
-		public Menu ()
+		public CartaoView ()
 		{
 			InitializeComponent ();
 		}

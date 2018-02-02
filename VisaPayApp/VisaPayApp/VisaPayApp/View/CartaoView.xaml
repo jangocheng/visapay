@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.CartaoView">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" >
+            <StackLayout Padding="20">
+                
+                <StackLayout Padding="30" Margin="0,30,0,0">
+                    <Label TextColor="{StaticResource azul}" Text="ADICIONE SEU CARTÃO" FontAttributes="Bold" VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="18"/>
+                </StackLayout>
+
+                <StackLayout  Margin="0,30,0,0">
+                    <StackLayout>
+                        <Entry Style="{StaticResource input}"  Keyboard="Numeric" Placeholder="NUMERO CARTÃO"/>
+
+                        <Entry Style="{StaticResource input}" 
+                               Placeholder="NOME COMPLETO"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Grid>
+
+
+                            <Entry Style="{StaticResource input}" 
+                                   Placeholder="CVV/CVC" Keyboard="Numeric" Grid.Column="0"/>
+
+                            <Entry Style="{StaticResource input}" 
+                                   Placeholder="MÊS"  Keyboard="Numeric" Grid.Column="1"/>
+
+                            <Entry Style="{StaticResource input}" 
+                                   Placeholder="ANO"  Keyboard="Numeric" Grid.Column="2"/>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout  Margin="0,50,0,0">
+                    <Button Style="{StaticResource buttonAzul}" Text="SALVAR"/>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

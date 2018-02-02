@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisaPayApp.View.Cadastro" Title="Cadastro">
+    <ContentPage.Content>
+        <StackLayout Padding="20" BackgroundColor="White">
+
+            <StackLayout Margin="0,30,0,0">
+                <Image Source="@drawable/logo_azul"/>
+            </StackLayout>
+            
+            <StackLayout Margin="0,60,0,0">
+
+                <StackLayout>
+                    <Entry Placeholder="Nome" 
+                           Style="{StaticResource input}"/>
+                </StackLayout>
+
+
+                <StackLayout>
+                    <Entry Placeholder="Email"
+                           Style="{StaticResource input}"
+                    />
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Senha"
+                           Style="{StaticResource input}" IsPassword="True"/>
+                </StackLayout>
+
+
+                <StackLayout>
+                    <Entry Placeholder="Email" 
+                           Style="{StaticResource input}" Keyboard="Email"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,30,0,0">
+                    <Button Text="Cadastrar"
+                            Style="{StaticResource buttonAzul}"
+                            Command="{Binding Cadastrar}"/>
+                </StackLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

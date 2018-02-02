@@ -16,34 +16,82 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Cartao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Menus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Pessoa.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Cadastro.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CadastroViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CartoesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MenuViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cadastro.xaml.cs">
       <DependentUpon>Cadastro.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Login.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\CartaoView.xaml.cs">
+      <DependentUpon>CartaoView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cartoes.xaml.cs">
+      <DependentUpon>Cartoes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Detail.xaml.cs">
+      <DependentUpon>Detail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Menu.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\MasterDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Receber.xaml.cs">
+      <DependentUpon>Receber.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ViewModel\Login.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ViewModel\Menu.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ViewModel\Cadastro.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Cadastro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Cartoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\CartaoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Receber.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

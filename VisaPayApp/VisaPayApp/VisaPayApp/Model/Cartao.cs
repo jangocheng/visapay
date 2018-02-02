@@ -8,7 +8,7 @@ namespace VisaPayApp.Model
     {
         public int Id { get; set; }
         public string Numero { get; set; }
-        public int DiaVencimento { get; set; }
+        public int MesVencimento { get; set; }
         public int AnoVencimento { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
